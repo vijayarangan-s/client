@@ -1,0 +1,38 @@
+.datatable-rowgroup-demo .p-rowgroup-footer td {
+    font-weight: 700;
+}
+
+.datatable-rowgroup-demo .p-rowgroup-header span {
+    font-weight: 700;
+}
+
+.datatable-rowgroup-demo .p-rowgroup-header .p-row-toggler {
+    vertical-align: middle;
+    margin-right: .25rem;
+}
+
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider{
+    background: black;
+}
+
+
+.p-inputswitch.p-inputswitch-checked:not(.p-disabled):hover .p-inputswitch-slider {
+    background: black;
+}
+
+.rowAlign {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.switchAlign {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.colHead {
+    font-size: 15px;
+}
+
