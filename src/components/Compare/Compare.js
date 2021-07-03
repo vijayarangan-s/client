@@ -168,12 +168,14 @@ export const Compare = () => {
     }
 
     const renderNewColumn = () => {
-        console.log("add me...")
-        setCols([...cols])
+        // console.log("add me...")
+        setCount(count+1)
+        setCols([...cols, columnComponent()])
     }
 
     const columnComponent = () => {
-        return <Column key={col.field} field={col.field} header={col.header} />
+        console.log({count})
+        return <Column field="" header={`version${count}`} />
     }
 
     const renderCollapseTable = () => {
@@ -205,7 +207,15 @@ export const Compare = () => {
                         <Column field="name"  className="colHead" header="Base Version"></Column>
                         <Column field="company"  className="colHead" header="Version 2"></Column>
                         {
-                            count && columnComponent
+                            cols && 
+                            cols.map((v,i) => {
+                                // console.log({v})
+                                return(
+                                    <div key={i}>
+                                      <columnComponent/>
+                                    </div>
+                                )
+                            })
                         }
                         
                         <Column  header={renderAddCols()}></Column>
