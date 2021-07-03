@@ -100,10 +100,9 @@ export const Compare = () => {
         return(
             <React.Fragment>
                 { rowData.cols &&
-                    rowData.cols.map((val) => {
-                        console.log({val})
+                    rowData.cols.map((val,i) => {
                         return(
-                        <div className="rowAlign">
+                        <div key={i} className="rowAlign">
                         <span>{val}</span>
                         </div>
                         )
@@ -168,16 +167,11 @@ export const Compare = () => {
     }
 
     const renderNewColumn = () => {
-        // console.log("add me...")
         setCount(count+1)
-        setCols([...cols, columnComponent()])
+        setCols([...cols, <Column field="" header={`version ${count}`} />])
     }
 
-    const columnComponent = () => {
-        console.log({count})
-        return <Column field="" header={`version${count}`} />
-    }
-
+   
     const renderCollapseTable = () => {
         return(
             <div className="datatable-rowgroup-demo">
@@ -200,20 +194,19 @@ export const Compare = () => {
                     
                         <Column 
                             field="" 
+                            className=""
                             header={renderToggleSwitch()}
                             body={headerColumns}
-                        ></Column>
+                        />
                         
                         <Column field="name"  className="colHead" header="Base Version"></Column>
                         <Column field="company"  className="colHead" header="Version 2"></Column>
                         {
                             cols && 
                             cols.map((v,i) => {
-                                // console.log({v})
-                                return(
-                                    <div key={i}>
-                                      <columnComponent/>
-                                    </div>
+                                console.log({i})
+                                return (
+                                       <Column key={i} field="" header={`version ${i+3}`} />
                                 )
                             })
                         }
