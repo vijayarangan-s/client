@@ -5,3 +5,12 @@ import { Column } from "primereact/column";
 
 import "primereact/resources/themes/nova-light/theme.css";
 import "primereact/resources/primereact.css";
+
+
+const CollapseTable = () => {
+
+
+    return(
+        <></>
+    )
+}

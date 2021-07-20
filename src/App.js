@@ -7,6 +7,9 @@ import { Badge } from 'primereact/badge';
 import { Compare } from './components/Compare/Compare';
 import ToolTipDemo from './components/ToolTip/ToolTipDemo';
 import  TableData  from './components/TableData/TableData';
+import { CompVersion } from './components/CompVersion/CompVersion';
+import { Workflow } from './components/Workflow/Workflow';
+import { ExpandRow } from './components/ExpandRow/ExpandRow';
 
 
 
@@ -14,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <p>Tooltip from prime react</p>
-      <Compare/>
+      <ExpandRow/>
     </div>
   );
 }
