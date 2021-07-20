@@ -95,7 +95,7 @@ export const ExpandRow = () => {
                     </div>
                 </div>
                 <div className="expandRow" style={{marginTop:"3px"}}>
-                    <LogData />
+                    <LogData id={data?.id} />
                 </div>
             </React.Fragment>
         );
