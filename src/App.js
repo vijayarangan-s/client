@@ -15,6 +15,7 @@ import { HamMenu } from './components/HamMenu/HamMenu';
 import { OverlayPanel } from 'primereact/overlaypanel';
 import { OverlayPanelDemo } from './components/OverlayPrime/OverlayPanelDemo'
 import SQLSearch from './components/SQLSearch/SQLSearch';
+import GridAction  from './components/GridAction/GridAction';
 
 
 
@@ -22,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <p>Tooltip from prime react</p>
-      <SQLSearch/>
+      <GridAction/>
     </div>
   );
 }
