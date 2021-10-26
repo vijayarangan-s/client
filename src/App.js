@@ -10,6 +10,11 @@ import  TableData  from './components/TableData/TableData';
 import { CompVersion } from './components/CompVersion/CompVersion';
 import { Workflow } from './components/Workflow/Workflow';
 import { ExpandRow } from './components/ExpandRow/ExpandRow';
+import { Calendar1 } from './components/Calendra/Calendar';
+import { HamMenu } from './components/HamMenu/HamMenu';
+import { OverlayPanel } from 'primereact/overlaypanel';
+import { OverlayPanelDemo } from './components/OverlayPrime/OverlayPanelDemo'
+import SQLSearch from './components/SQLSearch/SQLSearch';
 
 
 
@@ -17,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <p>Tooltip from prime react</p>
-      <ExpandRow/>
+      <SQLSearch/>
     </div>
   );
 }

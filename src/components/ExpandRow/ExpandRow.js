@@ -71,7 +71,6 @@ export const ExpandRow = () => {
    
 
     const rowExpansionTemplate = (data) => {
-        console.log({data})
         let {action, status, entity, cr_name, cr_time, reason, help_note} = data?.details?.[0]
         return (
             <React.Fragment>
