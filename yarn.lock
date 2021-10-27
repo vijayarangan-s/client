@@ -9060,7 +9060,7 @@ react-error-overlay@^6.0.9:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
 
-react-filter-box@^3.4.2:
+react-filter-box@^3.2.0:
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/react-filter-box/-/react-filter-box-3.4.2.tgz#88c211b2016daef358e8cf84044d00c4093ccc2c"
   integrity sha512-DcZWe8pAPobOKWs8dvTCx2KFCOT/8cE1fjCuoeLJ+NOozzSqS6bO235BllPUUfd0bMfSmjbIxewqvGgaAOxdzA==

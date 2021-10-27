@@ -6,20 +6,21 @@ class CustomResultProcessing extends SimpleResultProcessing {
 
     // override this method to add your handler for startsWith operator
     filter(row, fieldOrLabel, operator, value){
-        
         var field = this.tryToGetFieldCategory(fieldOrLabel);
-        console.log({row, fieldOrLabel, operator, value, field})
         switch(operator){
-            case "==": return row[field] == value;
-            case "!=": return row[field] != value;
-            case "contains": return row[field].toLowerCase().indexOf(value.toLowerCase()) >=0;
-            case "!contains": return row[field].toLowerCase().indexOf(value.toLowerCase()) <0;
-            case "startsWith": return  _.startsWith(row[field].toLowerCase(), value.toLowerCase() ) ;
+            case "=": return row[field] === value;
+            case "<>": return row[field] !== value;
             case ">": return row[field] > value;
             case "<": return row[field] < value;
+            case ">=": return row[field] >= value;
+            case "<=": return row[field] <= value;
+            case "LIKE": return row[field].includes(value);
+            case "NOT LIKE": return !row[field].includes(value);
+            case "NULL": return row[field] === null;
+            case "NOT NULL": return row[field] !== null;
+            default: return row[field]
         }
         
-        return false;
     }
 }
 
