@@ -85,11 +85,8 @@ class GridAction extends Component {
 }
 
 onParseOk(expressions) { 
-    console.log({expressions})
     var newData = new CustomResultProcessing(this.options).process(this.dt, expressions);
-    console.log({newData})
     this.setState({ products: newData });
-    // console.log(newData);
 }
 
   render(){
@@ -99,15 +96,15 @@ onParseOk(expressions) {
         <h3>Grid Action is going to fun...!</h3>
         <div>
             <ReactFilterBox
-                autoCompleteHandler = {this.customAutoComplete}
-                customRenderCompletionItem = {this.customRenderCompletionItem.bind(this) }
-                query={this.state.query}
-                data={data}
-                options={this.options}
-                onParseOk={this.onParseOk.bind(this) }
-                />
+              autoCompleteHandler = {this.customAutoComplete}
+              customRenderCompletionItem = {this.customRenderCompletionItem.bind(this) }
+              query={this.state.query}
+              data={data}
+              options={this.options}
+              onParseOk={this.onParseOk.bind(this) }
+            />
         </div>
-                <BootstrapTable keyField="id" data={data} columns={this.columns} />
+            <BootstrapTable keyField="id" data={data} columns={this.columns} />
         </div>
       )
   }

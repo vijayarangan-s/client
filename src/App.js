@@ -16,14 +16,18 @@ import { OverlayPanel } from 'primereact/overlaypanel';
 import { OverlayPanelDemo } from './components/OverlayPrime/OverlayPanelDemo'
 import SQLSearch from './components/SQLSearch/SQLSearch';
 import GridAction  from './components/GridAction/GridAction';
+import FilterGrid from './components/FilterBox/FilterGrid';
+import DisplayResult from './components/DisplayResult/DisplayResult';
 
 
 
 function App() {
   return (
     <div className="App">
-      <p>Tooltip from prime react</p>
-      <GridAction/>
+      <p>Filter Box for Advanced search</p>
+      <FilterGrid/>
+      <hr/>
+      <DisplayResult/>
     </div>
   );
 }

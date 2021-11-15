@@ -1,0 +1,28 @@
+.container{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+  }
+
+.main-container{
+    display: flex; 
+    justify-content: center;
+}
+
+.filter-container{
+    margin-bottom: -3px;
+}
+
+.textarea-filter{
+    border: none;
+}
+
+.input-textarea{
+    border: none;
+}
+
+.close-icon{
+    font-size: 10px;
+}

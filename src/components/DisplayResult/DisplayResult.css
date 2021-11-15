@@ -1,0 +1,14 @@
+.display-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bootstrap-table{
+    display: flex;
+    justify-content: center;
+}
+
+.filter-grid{
+    margin-bottom: 10px;
+}
